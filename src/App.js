@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
-import "./App.css";
 import Movies from "./components/Movies";
 import Customers from "./components/Customers";
 import Rentals from "./components/Rentals";
 import NotFound from "./components/NotFound";
-import Jumbotron from "./components/Jumbotron";
+import NavBar from "./components/NavBar";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Jumbotron />
+        <NavBar />
         <main className="container">
           <Switch>
             <Route path="/movies" component={Movies} />
