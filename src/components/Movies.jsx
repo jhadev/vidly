@@ -95,7 +95,6 @@ class Movies extends Component {
   };
 
   render() {
-    const { length: count } = this.state.movies;
     const { pageSize, currentPage, sortColumn, searchQuery } = this.state;
     const { user } = this.props;
 
@@ -103,7 +102,7 @@ class Movies extends Component {
 
     return (
       <div className="row">
-        <div className="col-3">
+        <div className="col-md-3 col-12 mb-2">
           <ListGroup
             items={this.state.genres}
             onItemSelect={this.handleGenreSelect}
