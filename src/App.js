@@ -52,7 +52,7 @@ class App extends Component {
           user={user}
         />{" "} */}
         <div>
-          <Navbar className="shadow" color="faded" light>
+          <Navbar className="shadow" color="light" light expand="md">
             <NavbarBrand href="/" className="mr-auto">
               vidly
             </NavbarBrand>
